@@ -47,7 +47,7 @@ st.write(params)
 with st.spinner('Loading...'):
     time.sleep(30)
 
-backend_url = 'http://127.0.0.1:8000/predict'
+backend_url = 'https://textsummary2-owfdsgrlca-as.a.run.app/predict'
 response = requests.get(backend_url, params=params)
 print(response.status_code)
 prediction = response.json()
